@@ -1,0 +1,53 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    height: 100%;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+
+.image-slider-container {
+    display: flex;
+    width: 60vw;
+    height: 80vh;
+    background-color: rgb(101, 119, 135);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.image-and-arrow-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container > img {
+    width: 25vw;
+    width: 35vh;
+    transition: all ease-in-out 0.1s;
+}
+
+
+img.animateright {
+    transform: translateX(200px);
+    opacity: 1%;
+}
+
+img.animateleft {
+    transform: translateX(-200px);
+    opacity: 1%;
+}
